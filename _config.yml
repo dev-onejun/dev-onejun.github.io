@@ -44,7 +44,7 @@ theme_settings:
 
   # Scripts
   google_analytics: "G-KB6MQ9M805" # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  disqus_shortname: "dev-onejun"
   katex: true # Enable if using math markup
   search: true # Enable the search feature
 
