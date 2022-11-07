@@ -1,0 +1,11 @@
+---
+layout: post
+title: "[git] About rm command in git"
+subtitle: ""
+categories: [Study/git]
+tags:
+comments: true
+---
+
+## About `git rm`
+https://confluence.curvc.com/display/public/ASD/git+rm
