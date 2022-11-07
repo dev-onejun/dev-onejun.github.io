@@ -43,7 +43,7 @@ theme_settings:
   youtube:
 
   # Scripts
-  google_analytics: "G-KB6MQ9M805" # Tracking ID, e.g. "UA-000000-01"
+  google_analytics: "UA-188342716-1" # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname: "dev-onejun-github-io"
   katex: true # Enable if using math markup
   search: true # Enable the search feature
@@ -88,7 +88,7 @@ incremental: false
 sass:
   sass_dir: _sass
   style: :compressed
-plugins: 
+plugins:
   - jekyll-paginate
   - jekyll-category-pages
 gem:
