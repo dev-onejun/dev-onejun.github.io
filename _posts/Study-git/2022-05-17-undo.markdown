@@ -8,5 +8,6 @@ comments: true
 ---
 
 ## undo commit
+
 https://www.lainyzine.com/ko/article/git-reset-and-git-revert-and-git-commit-amend/
 
