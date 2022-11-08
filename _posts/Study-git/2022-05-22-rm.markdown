@@ -9,4 +9,4 @@ comments: true
 
 ## About `git rm`
 
-https://confluence.curvc.com/display/public/ASD/git+rm
+- [Reference](https://confluence.curvc.com/display/public/ASD/git+rm)

@@ -11,4 +11,4 @@ comments: true
 
 ### how
 
-https://www.lainyzine.com/ko/article/creating-ssh-key-for-github/
+- [Reference](https://www.lainyzine.com/ko/article/creating-ssh-key-for-github/)
