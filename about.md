@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /dev-onejun/
+permalink: /dev-onejun
 feature-img: ""
 ---
 
