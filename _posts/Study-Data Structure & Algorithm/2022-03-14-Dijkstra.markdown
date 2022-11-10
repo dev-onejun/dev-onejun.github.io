@@ -1,0 +1,19 @@
+---
+layout: post
+title: "[Algorithm] Dijkstra Algorithm"
+subtitle: ""
+categories: [Study/Data Structure & Algorithm]
+tags:
+comments: true
+---
+
+## Dijkstra's Algorithm
+
+- Explanation
+  - [Reference 1](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
+
+- Difference between Prim's algorithm
+  - Dijkstra's algorithm can work on both directed and undirected graphs.
+  - Prim's algorithm only works on undirected graphs.
+    - [more about Prim's Algorithm](../Prim.html)
+
