@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Linux & Infra] mosh"
+title: "[Linux & Infra] wine"
 subtitle: ""
 categories: [Study/Linux & Infra]
 tags: [Linux, ubuntu, mosh]
