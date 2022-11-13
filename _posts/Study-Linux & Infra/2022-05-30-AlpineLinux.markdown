@@ -9,5 +9,5 @@ comments: true
 
 ## Alpine Linux
 
-Alpine Linux is light-weighted linux distribution.
+Alpine Linux is light-weighted linux distribution.\
 It can be used in Single Board Computer such as Raspberry Pi or Docker Container.
