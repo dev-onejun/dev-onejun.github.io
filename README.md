@@ -10,3 +10,5 @@
 * MIGRATE: articles from previous blog
 * WRITE: articles about previous project
 * WRITE: article about computer security project
+* UPDATE: favicon.ico
+* FIX: link error in search page
