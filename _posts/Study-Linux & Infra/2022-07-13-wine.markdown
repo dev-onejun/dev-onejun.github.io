@@ -3,7 +3,7 @@ layout: post
 title: "[Linux & Infra] wine"
 subtitle: ""
 categories: [Study/Linux & Infra]
-tags: [Linux, ubuntu, mosh]
+tags: [Linux, ubuntu, wine]
 comments: true
 ---
 
