@@ -2,7 +2,7 @@
 layout: post
 title: "[Project] GroupSharing"
 subtitle: ""
-categories: [Project/GroupSharing]
+categories: [Project/group-sharing]
 tags:
 comments: true
 ---
