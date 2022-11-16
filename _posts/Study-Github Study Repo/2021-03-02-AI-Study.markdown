@@ -1,0 +1,12 @@
+---
+layout: post
+title: "[Github Repo] Artificial Intelligence Study"
+subtitle: ""
+categories: [Study/Github Study Repo]
+tags:
+comments: true
+---
+
+## Artificial Intelligence
+
+[Link](https://github.com/dev-onejun/AI-Study)

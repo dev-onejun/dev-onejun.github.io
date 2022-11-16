@@ -6,9 +6,7 @@
 
 ## TODO
 
-* FIX: sitemap.xml error
-* MIGRATE: articles from previous blog
+* ~~FIX: sitemap.xml error~~ ?
 * WRITE: articles about previous project
 * WRITE: article about computer security project
-* UPDATE: favicon.ico
 * FIX: link error in search page
