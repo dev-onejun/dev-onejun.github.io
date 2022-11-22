@@ -1,0 +1,17 @@
+---
+layout: post
+title: "[Linux & Infra] make command in Linux"
+subtitle: ""
+categories: [Study/Linux & Infra]
+tags: [Linux, ubuntu, make]
+comments: true
+---
+
+## What is make command in Linux
+
+You can specify what to do and automate it with `make` command and `makefile` file.\
+
+### Reference
+
+[Reference 1](https://www.javatpoint.com/linux-make-command)
+
