@@ -11,23 +11,21 @@ comments: true
 
 ### How to ADD,DELETE user
 
-1. add
+1. ADD\
 `$ sudo adduser <username>`
+2. DELETE\
+`$ sudo deluser <username>`\
+IF YOU WANT to remove the user files\
+`$ sudo deluser --remove-home <username>`
 
 #### To give sudo privilge
 
 `$ sudo usermod -aG sudo <username>`\
-run a command with sudo privileges without entering the password
-
-- `$ EDITOR=vim visudo`
-- adding a line below to end of file. replace username with yours
-  - `username ALL=(ALL) NOPASSWD: ALL`
-
-2. delete
-`$ sudo deluser <username>`
-
-- IF YOU WANT to remove the user files
-  - `$ sudo deluser --remove-home <username>`
+run a command with sudo privileges without entering the password\
+\
+`$ EDITOR=vim visudo`\
+adding a line below to end of file. replace username with yours\
+`username ALL=(ALL) NOPASSWD: ALL`\
 
 ## Connect AirPods
 
