@@ -6,7 +6,7 @@
 
 ## TODO
 
-* FIX: sitemap.xml error
+* ~~FIX: sitemap.xml error~~
 * FIX: download static file (vim)
 * WRITE: articles about previous project
 * WRITE: article about computer security project
