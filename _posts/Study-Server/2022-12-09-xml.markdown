@@ -1,0 +1,25 @@
+---
+layout: post
+title: "[Server] Fixing sitemap.xml Error"
+subtitle: ""
+categories: [Study/Server]
+tags: [Server, sitemap, xml]
+comments: true
+---
+
+## xml
+
+### sitemap.xml error
+
+`/sitemap.xml` emitted error with an error, `xmlParseEntityRef: noname`.
+
+#### Solution
+
+The reason is due to the special chracters in xml data.\
+In my case, because of the blank and '&' chracters, the error emitted.\
+\
+The solution is changeing xml file like below.
+
+``` xml
+<![CDATA[{XML DATA}]]>
+```
