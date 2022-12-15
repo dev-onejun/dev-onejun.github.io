@@ -8,3 +8,6 @@ comments: true
 ---
 
 ## Welteied
+
+- [Upstream Github Repository](https://github.com/Weltried/server)
+- [Origin Github Repository](https://github.com/dev-onejun/Weltried-server)
