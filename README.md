@@ -6,7 +6,4 @@
 
 ## TODO
 
-* FIX: download static file (vim)
-* WRITE: articles about previous project
-* WRITE: article about computer security project
 * FIX: link error in search page
