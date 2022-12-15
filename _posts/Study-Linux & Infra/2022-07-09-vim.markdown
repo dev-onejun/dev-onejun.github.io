@@ -61,8 +61,8 @@ EOF
 
 ## My .vimrc file
 
-- [current vim setting](/assets/file/vim/current_setting/.vimrc)
-  - [.vimrc.plug](/assets/file/vim/current_setting/.vimrc.plug)
+- [current vim setting](https://raw.githubusercontent.com/dev-onejun/dev-onejun.github.io/master/assets/file/vim/current_setting/.vimrc)
+  - [.vimrc.plug](https://raw.githubusercontent.com/dev-onejun/dev-onejun.github.io/master/assets/file/vim/current_setting/.vimrc.plug)
   - I used this configure as javascript,
   but now I used only this with various coc language server.
-- [previous python setting](/assets/file/vim/previous_python_setting/.vimrc)
+- [previous python setting](https://raw.githubusercontent.com/dev-onejun/dev-onejun.github.io/master/assets/file/vim/previous_python_setting/.vimrc)
