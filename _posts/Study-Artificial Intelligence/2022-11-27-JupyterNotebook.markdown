@@ -36,12 +36,12 @@ pip install jupyter_contrib_nbextensions && jupyter contrib nbextension install
 
 - I am testing a extension, [jupyter-vim-binding](https://github.com/lambdalisue/jupyter-vim-binding) on my notebook.
 
-### References
+### Extension References
 
-[Reference 1](https://www.tabnine.com/blog/top-12-jupyter-notebook-extensions/)
+[Reference 1](https://www.tabnine.com/blog/top-12-jupyter-notebook-extensions/)\
 [Reference 2](https://www.tabnine.com/install/jupyternotebook)
 
-## Running a public Jupyter Notebook with SSL/HTTPS
+## Running a public Jupyter Notebook server with SSL/HTTPS
 
 ### Step by Step
 
@@ -71,3 +71,7 @@ pip install jupyter_contrib_nbextensions && jupyter contrib nbextension install
         c.NotebookApp.open_browser = False
         c.NotebookApp.port = 9999
         ```
+
+### Public Server References
+
+[Reference 1](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html)
