@@ -28,7 +28,6 @@ pip install jupyter_contrib_nbextensions && jupyter contrib nbextension install
     jupyter serverextension enable --py jupyter_tabnine --user
     ```
 
-    [Reference](https://www.tabnine.com/install/jupyternotebook)
 3. Code prettify
 4. Notify
 5. Snippets Menu
@@ -40,3 +39,35 @@ pip install jupyter_contrib_nbextensions && jupyter contrib nbextension install
 ### References
 
 [Reference 1](https://www.tabnine.com/blog/top-12-jupyter-notebook-extensions/)
+[Reference 2](https://www.tabnine.com/install/jupyternotebook)
+
+## Running a public Jupyter Notebook with SSL/HTTPS
+
+### Step by Step
+
+1. Make a self-signed certificate with `openssl`
+
+    ``` bash
+    openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mykey.key -out mycert.pem
+    ```
+
+2. Set jupyter notebook settings
+
+    1. make config file with the following command
+
+        ``` bash
+        jupyter notebook --generate-config
+        ```
+
+        This will generate `jupyter_notebook_config.py` in the `~/.jupyter` directory.
+
+    2. set appropriate value like below
+
+        ``` python
+        c.NotebookApp.certfile = u'/absolute/path/to/your/certificate/mycert.pem'
+        c.NotebookApp.keyfile = u'/absolute/path/to/your/certificate/mykey.key'
+
+        c.NotebookApp.ip = '*'
+        c.NotebookApp.open_browser = False
+        c.NotebookApp.port = 9999
+        ```
