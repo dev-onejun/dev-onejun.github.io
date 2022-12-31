@@ -11,12 +11,15 @@ comments: true
 
 ### How to ADD,DELETE user
 
-1. ADD\
-`$ sudo adduser <username>`
-2. DELETE\
-`$ sudo deluser <username>`\
-IF YOU WANT to remove the user files\
-`$ sudo deluser --remove-home <username>`
+1. ADD
+
+    `$ sudo adduser <username>`
+
+2. DELETE
+
+    `$ sudo deluser <username>`
+    - IF YOU WANT to remove the user files\
+    `$ sudo deluser --remove-home <username>`
 
 #### To give sudo privilge
 
@@ -26,7 +29,7 @@ run a command with sudo privileges without entering the password\
 `$ EDITOR=vim visudo`\
 adding a line below to ~end of file~. replace username with yours
 
-``` sudoers
+``` config
 username ALL=(ALL) NOPASSWD: ALL
 ```
 
@@ -121,3 +124,52 @@ export EDITOR='$VISUAL'
 
 1. `sudo vim /etc/systemd/logind.conf`
 2. change `#HandleLidSwitch=suspend` to `HandleLidSwitch=ignore`
+
+## How to add swap space
+
+### Creating a swap file
+
+``` bash
+sudo fallocate -l 2G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+```
+
+- if the fallocate failed with the error message `fallocate failed: Operation not supported`, try
+
+    ``` bash
+    sudo dd if=/dev/zero of=/swapfile bs=1024 count=2097152
+    ```
+
+- to make the change permanently, add the following line in `/etc/fstab`
+
+    ``` config
+    /swapfile swap swap defaults 0 0
+    ```
+
+### Check and Change the Swappiness Value
+
+1. check swappiness value
+
+    ``` bash
+    cat /proc/sys/vm/swappiness
+    ```
+
+2. change swappiness value
+
+    ``` bash
+    sudo sysctl vm.swappiness=10
+    ```
+
+    - to make the change permanently, add the following line in `/etc/sysctl.conf`
+
+    ``` config
+    vm.swappiness=10
+    ```
+
+### Removing a swap file
+
+1. `sudo swapoff -v /swapfile`
+2. remove the line `/swapfile swap swap defaults 0 0` from the `/etc/fstab` file
+3. `sudo rm /swapfile`
