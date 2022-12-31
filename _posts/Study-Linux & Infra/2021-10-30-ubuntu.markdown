@@ -24,7 +24,7 @@ IF YOU WANT to remove the user files\
 run a command with sudo privileges without entering the password\
 \
 `$ EDITOR=vim visudo`\
-adding a line below to end of file. replace username with yours
+adding a line below to ~end of file~. replace username with yours
 
 ``` sudoers
 username ALL=(ALL) NOPASSWD: ALL
