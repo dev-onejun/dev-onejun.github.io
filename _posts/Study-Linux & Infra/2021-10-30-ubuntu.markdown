@@ -108,3 +108,16 @@ export EDITOR='$VISUAL'
 ```
 
 - Setting both is not necessarily needed, but some programs may be required.
+
+## How to keep turning on the laptop when it closes
+
+### Using GUI
+
+1. `sudo apt install gnome-tweaks`
+2. open the application `Tweaks`
+3. set off `Suspend when the laptop lid is closed` option.
+
+### Using Terminal
+
+1. `sudo vim /etc/systemd/logind.conf`
+2. change `#HandleLidSwitch=suspend` to `HandleLidSwitch=ignore`
