@@ -33,7 +33,7 @@ sudo apt reinstall gstreamer1.0-pipewire
 
 The application `caffeine` emitted an error on every boot.\
 The error messages are like below.
-![caffeine error](/assets/img/'[ubuntu-issue] caffeine error.png')
+![caffeine error](/assets/img/ubuntu-issue/caffeine-error.png)
 
 ##### Solution
 
