@@ -1,0 +1,19 @@
+---
+layout: post
+title: "How to install the latest python version in ubuntu"
+subtitle: ""
+categories: [Study/Linux & Infra]
+tags: [Linux, ubuntu, python]
+comments: true
+---
+
+## ppa:deadsnakes
+
+``` bash
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+```
+
+### Reference
+
+[Reference](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa)
