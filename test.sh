@@ -10,6 +10,12 @@ elif [ $1 = "clean" ]; then
     sudo docker rm $name
     sudo docker rmi test/$name:latest
 
+elif [ $1 = "run" ]; then
+    sudo docker stop $name
+    sudo docker rm $name
+    sudo docker run -d -p $1:4000 -v $PWD:/mnt --name $name test/$name:latest &&
+        echo -e "Re-run the container"
+
 elif [ $1 != "clean" ]; then
     if ! [[ $1 =~ ^[0-9]+$ ]]; then
         echo -e "Wrong options !!! Please try again with the proper one."
