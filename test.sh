@@ -20,14 +20,20 @@ elif [ $1 != "clean" ]; then
     if ! [[ $1 =~ ^[0-9]+$ ]]; then
         echo -e "Wrong options !!! Please try again with the proper one."
 
+    # run test with the given port number
     elif [ $1 -ge 2000 ] && [ $1 -le 65536 ]; then
-        sudo docker build -t test/$name . &&
+        if [ -z "$(sudo docker images | grep test/$name)" ]; then
+            sudo docker build -t test/$name .
 
-        sudo docker run -d -p $1:4000 -v $PWD:/mnt --name $name test/$name:latest &&
+            echo -e "\n\n\n**************************" &&
+            echo -e "test image is built successfully.\nIf you want to rebuild the image, Please run the command again with 'clean' option" &&
+            echo -e "**************************"
+        fi
 
-        echo -e "\n\n\n**************************" &&
-        echo -e "test image is built successfully.\nPlease run the command again with 'clean' option after finishing tests" &&
-        echo -e "**************************"
+        sudo docker run --rm -it -p $1:4000 -v $PWD:/mnt --name $name test/$name:latest bundle exec jekyll serve -H 0.0.0.0 --port=4000
+
+        echo -e "is it run?"
+
 
     #elif [ $1 -lt 2000 ] && [ $1 -gt 65536 ]; then
     else
