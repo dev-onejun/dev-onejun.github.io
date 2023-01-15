@@ -4,6 +4,7 @@ sitemap.xml
 test.sh
 Dockerfile
 .dockerignore
+Gemfile.lock
 
 .git
 .gitignore
