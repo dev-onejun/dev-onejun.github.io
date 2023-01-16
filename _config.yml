@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "https://dev-onejun.github.io/"
+url: "https://dev-onejun.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
