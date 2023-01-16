@@ -10,12 +10,6 @@ elif [ $1 = "clean" ]; then
     sudo docker rm $name
     sudo docker rmi test/$name:latest
 
-elif [ $1 = "run" ]; then
-    sudo docker stop $name
-    sudo docker rm $name
-    sudo docker run -d -p $1:4000 -v $PWD:/mnt --name $name test/$name:latest &&
-        echo -e "Re-run the container"
-
 elif [ $1 != "clean" ]; then
     if ! [[ $1 =~ ^[0-9]+$ ]]; then
         echo -e "Wrong options !!! Please try again with the proper one."
@@ -30,9 +24,12 @@ elif [ $1 != "clean" ]; then
             echo -e "**************************"
         fi
 
-        sudo docker run --rm -it -p $1:4000 -v $PWD:/mnt --name $name test/$name:latest bundle exec jekyll serve -H 0.0.0.0 --port=4000
+        bundle add webrick
 
-        echo -e "is it run?"
+        jekyll_port=4000
+        sudo docker run --rm -it -p $1:$jekyll_port -v $PWD:/usr/src/app --name $name test/$name:latest bundle exec jekyll serve -H 0.0.0.0 --port=$jekyll_port
+
+        bundle remove webrick
 
 
     #elif [ $1 -lt 2000 ] && [ $1 -gt 65536 ]; then

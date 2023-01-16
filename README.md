@@ -6,6 +6,3 @@
 
 ## TODO
 
-* UPDATE: test pages without building Dockerfile
-  * mounting?
-  * Gemfile is ovewritten, when the image runs (-v option)
