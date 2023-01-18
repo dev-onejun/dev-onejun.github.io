@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "AWS 프리티어 (무료계정)"
+title: "AWS 프리티어? 프리크레딧?"
 subtitle: ""
 categories: [Study/Linux & Infra]
 tags: [Linux, ubuntu, AWS, aws]
 comments: true
 ---
 
-## AWS 프리티어
+## AWS 프리크레딧
 
 나는 Azure와 GCP에서 제공하는 학생 크레딧이나 (영구적인) freetier를 사용하고 있다.\
 그러던 중, 지인에게 AWS 또한 영구적인 무료티어를 제공한다는 이야기를 들었다.\
