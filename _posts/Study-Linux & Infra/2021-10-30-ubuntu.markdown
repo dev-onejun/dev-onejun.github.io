@@ -64,9 +64,17 @@ sudo add-apt-repository --remove ppa:whatever/ppa
 
 - apt-key is deprecated .. so if you got warning about it, see [here](https://manpages.ubuntu.com/manpages/jammy/en/man8/apt-key.8.html#deprecation)
 
-## setting Firewall with ufw
+## setting Firewall
+
+### with `ufw`
 
 - [Reference 3](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-18-04)
+
+### with `iptables`
+
+If you installed AlgoVPN, you cannot use other firewall tools including `ufw`.\
+Please check [this page](https://github.com/mobile-shell/mosh/issues/1250), if you want to more.\
+Furthermore, if you want to save the rules, you should save the rules in `/etc/iptables/rules.v4` and `/etc/iptables/rules.v6` after installing the apt package `iptables-persistent`.
 
 ## When network does not work
 
