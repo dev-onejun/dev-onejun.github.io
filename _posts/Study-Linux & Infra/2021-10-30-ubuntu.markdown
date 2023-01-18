@@ -76,6 +76,8 @@ If you installed AlgoVPN, you cannot use other firewall tools including `ufw`.\
 Please check [this page](https://github.com/mobile-shell/mosh/issues/1250), if you want to more.\
 Furthermore, if you want to save the rules, you should save the rules in `/etc/iptables/rules.v4` and `/etc/iptables/rules.v6` after installing the apt package `iptables-persistent`.
 
+- [Reference](https://docs.ovh.com/us/en/dedicated/firewall-iptables/)
+
 ## When network does not work
 
 I've experienced the Internet connection wasn't established
