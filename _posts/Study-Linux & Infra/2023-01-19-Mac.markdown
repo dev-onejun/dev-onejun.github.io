@@ -1,0 +1,16 @@
+---
+layout: post
+title: "How to use Touch ID as an authentication of the sudo command"
+subtitle: ""
+categories: [Study/Linux & Infra]
+tags: [Linux, Mac, MacBook]
+comments: true
+---
+
+## use Touch ID as an authentication of sudo
+
+Add the following code at line 2 in the file `/etc/pam.d/sudo`
+
+``` config
+auth  sufficient  pam_tid.so
+```
