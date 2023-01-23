@@ -6,4 +6,3 @@
 
 ## TODO
 
-- DELETE: Google Analytics v4 settings

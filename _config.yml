@@ -43,7 +43,7 @@ theme_settings:
   youtube:
 
   # Scripts
-  google_analytics: "UA-188342716-1" # Tracking ID, e.g. "UA-000000-01"
+  google_analytics: "" # Tracking ID, e.g. "UA-000000-01"
   google_analytics_v4: "G-N8FHPQY153" # support GA4
   disqus_shortname: "dev-onejun-github-io"
   katex: true # Enable if using math markup
