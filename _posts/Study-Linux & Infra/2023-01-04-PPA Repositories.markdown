@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "useful PPA Repositories in ubuntu"
-subtitle: ""
+title: "useful PPA Repositories in Ubuntu"
+subtitle: "Last Update: 2023-01-23 MON"
 categories: [Study/Linux & Infra]
-tags: [Linux, ubuntu, PPA]
+tags: [Linux, Ubuntu, PPA]
 comments: true
 ---
 
@@ -15,7 +15,6 @@ The latest python version in ubuntu.
 
 ``` bash
 sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt update
 ```
 
 ### Jonathon F
@@ -24,10 +23,20 @@ The latest vim version in ubuntu.
 
 ``` bash
 sudo add-apt-repository ppa:jonathonf/vim
-sudo apt update
+```
+
+### git-core
+
+The latest version of git in ubuntu.
+
+``` bash
+sudo add-apt-repository ppa:git-core/ppa
 ```
 
 ----------------
 
-[deadsnakes official](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa)\
-[Jonathon F official](https://launchpad.net/~jonathonf/+archive/ubuntu/vim)
+## Reference
+
+- [deadsnakes official](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa)
+- [Jonathon F official](https://launchpad.net/~jonathonf/+archive/ubuntu/vim)
+- [git-core official](https://launchpad.net/~git-core/+archive/ubuntu/ppa)
