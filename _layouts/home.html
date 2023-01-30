@@ -23,7 +23,7 @@ layout: default
             </a></small
           >
         </h1>
-        <p class="meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <p class="meta">{{ post.date | date: "%B %-d, %Y" }} <a href="{{ post.url | relate_url }}#disqus_thread"></a></p>
       </header>
       <div class="excerpt">
         {{ post.excerpt }}

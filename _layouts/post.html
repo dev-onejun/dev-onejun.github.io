@@ -12,7 +12,7 @@ layout: default
     {% endif %}
     <p class="meta">
       {{ page.date | date: "%B %-d, %Y" }} {% if page.author %} - {{ page.author
-      }}{% endif %}
+      }}{% endif %} <a href="{{ site.baseurl }}{{ post.url | xml_escape }}#disqus_thread"></a>
     </p>
   </header>
   <section class="post-content">{{ content }}</section>
