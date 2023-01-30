@@ -2,7 +2,7 @@
 layout: post
 title: "[git] How to set default editor of git"
 subtitle: ""
-categories: [Study/git]
+categories: [Study/Linux & Infra]
 tags:
 comments: true
 ---

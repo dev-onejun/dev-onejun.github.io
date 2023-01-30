@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to use Touch ID as an authentication of the sudo command"
+title: "[Mac] How to use Touch ID as an authentication of the sudo command"
 subtitle: ""
 categories: [Study/Linux & Infra]
 tags: [Linux, Mac, MacBook]

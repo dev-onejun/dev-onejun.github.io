@@ -2,7 +2,7 @@
 layout: post
 title: "[git] How to undo commit in git"
 subtitle: ""
-categories: [Study/git]
+categories: [Study/Linux & Infra]
 tags:
 comments: true
 ---

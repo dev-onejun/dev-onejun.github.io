@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jupyter Notebook Settings"
+title: "[AI] Jupyter Notebook Settings"
 subtitle: ""
 categories: [Study/Artificial Intelligence]
 tags:

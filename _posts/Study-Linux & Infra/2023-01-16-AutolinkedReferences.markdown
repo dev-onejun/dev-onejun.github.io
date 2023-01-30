@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Autolinked References and URLs"
+title: "[git] Autolinked References and URLs"
 subtitle: ""
-categories: [Study/git]
+categories: [Study/Linux & Infra]
 tags:
 comments: true
 ---

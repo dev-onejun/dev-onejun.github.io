@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "AWS 프리티어? 프리크레딧?"
+title: "[Server] AWS 프리티어? 프리크레딧?"
 subtitle: ""
-categories: [Study/Linux & Infra]
-tags: [Linux, ubuntu, AWS, aws]
+categories: [Study/Server]
+tags: [Linux, Server, AWS, aws]
 comments: true
 ---
 

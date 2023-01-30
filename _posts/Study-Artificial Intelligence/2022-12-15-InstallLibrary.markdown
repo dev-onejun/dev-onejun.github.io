@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to install ML Libraries with Conda"
+title: "[AI] How to install ML Libraries with Conda"
 subtitle: ""
 categories: [Study/Artificial Intelligence]
 tags: [tensorflow, pytorch, python, library, anaconda, conda]

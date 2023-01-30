@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "useful PPA Repositories in Ubuntu"
+title: "[Linux & Infra] useful PPA Repositories in Ubuntu"
 subtitle: "Last Update: 2023-01-23 MON"
 categories: [Study/Linux & Infra]
 tags: [Linux, Ubuntu, PPA]

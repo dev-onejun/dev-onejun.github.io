@@ -2,7 +2,7 @@
 layout: post
 title: "[git] How to use Branch"
 subtitle: ""
-categories: [Study/git]
+categories: [Study/Linux & Infra]
 tags:
 comments: true
 ---

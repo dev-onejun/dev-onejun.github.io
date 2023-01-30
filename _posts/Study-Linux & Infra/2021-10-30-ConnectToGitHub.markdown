@@ -2,7 +2,7 @@
 layout: post
 title: "[git] How to connect by SSH with GITHUB"
 subtitle: ""
-categories: [Study/git]
+categories: [Study/Linux & Infra]
 tags:
 comments: true
 ---
