@@ -23,7 +23,7 @@ You can make if-elif block with the two codes below.
 
 ### conda virtual environment
 
-``` .vimrc
+``` vim
 " Python Virtual Environment Support
 python3 << EOF
 import os
@@ -42,7 +42,7 @@ EOF
 
 ### venv virtual environment
 
-``` .vimrc
+``` vim
 " Python Virtual Environment Support
 python3 << EOF
 import os
@@ -59,8 +59,6 @@ if "VIRTUAL_ENV" in os.environ:
 EOF
 ```
 
-## My .vimrc file
+## My Current .vimrc Settings
 
-- [current vim setting](/assets/file/vim/current_setting/config.zip)
-  - I used this configure as only javascript, but now I used only this with various coc language server.
-- [previous python setting](/assets/file/vim/previous_python_setting/config.zip)
+<script src="https://gist.github.com/dev-onejun/0513c8e0a3fb9607b3f8c7a5d3411401.js"></script>
