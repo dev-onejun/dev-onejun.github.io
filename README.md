@@ -3,6 +3,3 @@
 ## LINK
 
 [dev-onejun.github.io](https://dev-onejun.github.io)
-
-## TODO
-
