@@ -1,0 +1,40 @@
+---
+layout: post
+title: "[git] put together my all article about git"
+subtitle: ""
+categories: [Study/Linux & Infra]
+tags:
+comments: true
+---
+
+## git
+
+### `rm`
+
+[Article](/study/linux%20&%20infra/2022/05/22/rm.html)
+
+### how to set default editor
+
+[Article](/study/linux%20&%20infra/2022/08/14/SettingDefaultEditor.html)
+
+### how to undo commit
+
+[Article](/study/linux%20&%20infra/2022/05/17/undo.html)
+
+### `branch`
+
+[Article](/study/linux%20&%20infra/2021/10/30/branch.html)
+
+### `stash`
+
+[Reference](https://git-scm.com/book/ko/v2/Git-도구-Stashing과-Cleaning)
+
+## GitHub
+
+### Autolinked at commit
+
+[Article](/study/linux%20&%20infra/2023/01/16/AutolinkedReferences.html)
+
+### how to connect by ssh
+
+[Article](/study/linux%20&%20infra/2021/10/30/ConnectToGitHub.html)
