@@ -11,10 +11,10 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     {% for post in site.posts limit:15 %}
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <link>{{ post.url | relative_url }}</link>
-        <guid isPermaLink="true">{{ post.url | relative_url }}</guid>
-        <description>{{ post.content | xml_escape }}</description>
+        <title><![CDATA[{{ post.title | xml_escape }}]]></title>
+        <link><![CDATA[{{ post.url | relative_url }}]]></link>
+        <guid isPermaLink="true"><![CDATA[{{ post.url | relative_url }}]]></guid>
+        <description><![CDATA[{{ post.content | xml_escape }}]]></description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
       </item>
     {% endfor %}
