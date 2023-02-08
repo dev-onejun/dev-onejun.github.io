@@ -1,13 +1,15 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://dev-onejun.github.io"
+manifest: manifest.json
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
   title: WONJUN PARK
   avatar: assets/img/avatar.jpeg
-  favicon: assets/favicon.ico
+  favicon: favicon.ico
+  apple-touch-icon: apple-touch-icon.png
   gravatar: # Email MD5 hash
   description: "dev-onejun Github Blog" # used by search engines
 

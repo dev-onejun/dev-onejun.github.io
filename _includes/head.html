@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
   <!-- Web App Manifest -->
-  <link rel="manifest" href="{{ site.baseurl }}/pwa/manifest.json">
+  <link rel="manifest" href="{{ site.baseurl }}/{{ site.manifest }}">
 
   <!--Favicon-->
   <link
@@ -22,6 +22,7 @@
     href="{{ site.baseurl }}/{{ site.theme_settings.favicon }}"
     type="image/x-icon"
   />
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/{{ site.theme_settings.apple-touch-icon }}">
 
   <!-- Canonical -->
   <link
