@@ -1,0 +1,29 @@
+---
+layout: post
+title: "[Conference] Lablup 2022"
+subtitle: ""
+categories: [Review/Event]
+tags: [Conference, Lablup2022]
+comments: true
+---
+
+## AI를 즐겨라! 래블업 개발자 컨퍼런스 "lab | up > /conf/2"
+
+### Backend.AI
+
+Colab보다 자유롭게 사용할 수 있다고 함
+
+### Convolutional Neural Network
+
+#### Classification with Malaria Blood-smear Images
+
+[Private Repository](https://github.com/dev-onejun/Lablup-Conference-2022)
+
+------------------
+
+### 번외
+
+중간에 먹으라고 간식을 받았다.\
+![goods_1](/assets/img/Lablup2022/goods_1.JPEG)\
+끝나고는 가위바위보에 이겨서 책도 받았다.\
+![goods_2](/assets/img/Lablup2022/goods_2.JPEG)
