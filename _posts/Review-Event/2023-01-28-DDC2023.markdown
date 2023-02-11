@@ -1,0 +1,14 @@
+---
+layout: post
+title: "[Conference] DDC 2023"
+subtitle: ""
+categories: [Review/Event]
+tags: [Conference, DDC2023, Dev-Day]
+comments: true
+---
+
+## DDC 2023
+
+### Dev Day
+![timetable](/assets/img/DDC2023/timetable.PNG)\
+![picture](/assets/img/DDC2023/picture.jpeg)
