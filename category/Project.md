@@ -1,7 +1,7 @@
 ---
 layout: category
-title: Family-Blog
-permalink: "Project/Family-Blog"
+title: Project
+permalink: "Review/Project"
 ---
 
 Another sample category page.

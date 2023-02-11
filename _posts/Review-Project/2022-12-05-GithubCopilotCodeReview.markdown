@@ -2,7 +2,7 @@
 layout: post
 title: "[Project] Github Copilot Code Review"
 subtitle: ""
-categories: [Project/Github Copilot Code Review]
+categories: [Review/Project]
 tags:
 comments: true
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "[Project] Weltried"
 subtitle: ""
-categories: [Project/Weltried]
+categories: [Review/Project]
 tags:
 comments: true
 ---
@@ -10,4 +10,5 @@ comments: true
 ## Welteied
 
 - [Upstream Github Repository](https://github.com/Weltried/server)
+  - [Wiki](https://github.com/Weltried/server/wiki)
 - [Origin Github Repository](https://github.com/dev-onejun/Weltried-server)
