@@ -2,11 +2,6 @@
 const cacheName = 'v1';
 const cacheFiles = [
   '/',
-  '/index.html',
-  '/assets/css/main.css',
-  '/assets/js/search.js',
-  '/assets/js/katex_init.js',
-  '/assets/js/google_analytics_v4.js'
 ];
 
 // install service worker
