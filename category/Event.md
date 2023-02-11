@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Project
+title: Event
 permalink: "Review/Event"
 ---
 
