@@ -3,7 +3,7 @@ layout: post
 title: "[Project] Weltried"
 subtitle: ""
 categories: [Review/Project]
-tags:
+tags: [Project, Review]
 comments: true
 ---
 
@@ -12,3 +12,41 @@ comments: true
 - [Upstream Github Repository](https://github.com/Weltried/server)
   - [Wiki](https://github.com/Weltried/server/wiki)
 - [Origin Github Repository](https://github.com/dev-onejun/Weltried-server)
+
+## Review
+
+### 잘한 점
+
+한 학기라는 기간 안에 최초 기획했던 최소 기능을 만족했다.
+
+### 보완할 점
+
+#### 1
+
+프로젝트 Weltried는 팀 빌딩부터
+
+* Client (Android)
+* Server
+* AI
+
+팀 별로 인원을 구했다.\
+\
+각 팀별로 자율성과 전문성을 충족하기 위해서였다.\
+\
+프로젝트가 끝나고 생각해보면, 팀 간의 의사소통이 부족했던 것 같다.\
+프로젝트 구성원들은 서로 다른 팀끼리 현재 무엇을 하고 있는지 잘 이해하지 못했다.\
+\
+이에 대한 해결책으로 scrum에 대해 생각해봤다.\
+**매일 업무를 시작하기 전에 하는 스탠드업 미팅과,\
+업무가 끝난 후의 피드백 타임(코드 리뷰나 공부한 내용 공유 등)을 가지면 좋겠다**는 생각이 든다.
+
+#### 2
+
+프로젝트의 핵심 아이디어인 _바른 자세_에 대한 정의가 부족했다고 생각한다.\
+이는 프로젝트 도중 교수님으로부터도 지속적으로 받았던 피드백이었다.\
+하지만 진행 당시에 우리 팀은 그에 대해 공감하지 못했고, 결과적으로 그에 대한 반영이 충분히 되지 않았다.\
+\
+나는 다음 학기에 `요가와명상`이라는 수업을 수강했다.\
+수업에서는 여러 요가 자세들을 배웠는데, 그 자세 중 명상을 하기 위해 앉아서 허리를 세운 자세가 있다.\
+이 자세를 모범 자세로 하여, 우리 프로젝트의 _바른 자세_의 토대를 만들었으면 좋지 않았을까 하는 생각을,\
+프로젝트가 끝난 지금에와서야 하였다.
