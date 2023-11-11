@@ -15,7 +15,7 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <p><b>안녕하세요 Hello Holla</b></p>
+     <p><b>It's a feature, not a bug</b></p>
   header_text_feature_image: assets/img/main_bg.jpeg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
