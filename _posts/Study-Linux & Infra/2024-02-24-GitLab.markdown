@@ -1,0 +1,107 @@
+---
+layout: post
+title: "[GitLab] Encountered Issues While Deploying Local GitLab Docker Container"
+subtitle: ""
+categories: [Study/Linux & Infra]
+tags: [Git, GitLab, Docker, ubuntu server]
+comments: true
+---
+
+## Installation Manuals During The Deployment
+
+* [Official Documentation](https://docs.gitlab.com/16.9/ee/install/docker.html)
+* [Blog 1](ljhttps://freeend.tistory.com/m/98), [Blog 2](https://dncjf64.tistory.com/384)
+
+## Problem Description
+
+### 1. Sending mails in GitLab does not works
+
+The official document recommends to use an independent SMTP server, not only `sendmail` client in the container.\
+However, since I do not have own domains and deployed SMTP servers, I just use `sendmail` with the following steps.
+
+``` bash
+# Go inside to the container
+$ docker exec -it gitlab bash
+
+# Install `sendmail`. The GitLab Container Version, 16.9.1-ce.0, does not contain `sendmail` at least before this article is first written.
+$ apt update
+$ apt install sendmail
+$ sendmailconfig
+
+# Verify it works.
+$ gitlab-rails console
+##...
+irb(main):001:0> ActionMailer::Base.delivery_method
+=> :sendmail
+irb(main):002:0> ActionMailer::Base.sendmail_settings
+=> {:location=>"/usr/sbin/sendmail", :arguments=>"-i"}
+irb(main):003:0> Notify.test_email('youremail@email.com', 'Hello World', 'This is a test message').deliver_now
+##...
+```
+
+You should configure the `/etc/gitlab/gitlab.rb` file, if gitlab-rails console print unexpected outputs.\
+\
+Plus, `gmail` cannot be used due to its policy. [Naver](mail.naver.com) works well.
+
+#### References
+
+* [https://docs.gitlab.com/omnibus/settings/smtp.html#email-not-sent](https://docs.gitlab.com/omnibus/settings/smtp.html#email-not-sent)
+* [https://kenfavors.com/code/how-to-install-and-configure-sendmail-on-ubuntu/](https://kenfavors.com/code/how-to-install-and-configure-sendmail-on-ubuntu/)
+
+### 2. Cloning Repositories Through SSH does not works
+
+I used the following `docker-compose.yml` file to deploy the GitLab container.
+
+``` yaml
+version: '0.1'
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:16.9.1-ce.0
+    container_name: gitlab
+    restart: always
+    hostname: 'xxx.xxx.xxx.xxx'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+         # Add any other gitlab.rb configuration here, each on its own line
+         external_url 'https://xxx.xxx.xxx.xxx:5037'
+         gitlab_rails['gitlab_shell_ssh_port'] = 4846
+     ports:
+       - '5037:5037'
+       - '4846:4846'
+     volumes:
+       - '$GITLAB_HOME/config:/etc/gitlab'
+       - '$GITLAB_HOME/logs:/var/log/gitlab'
+       - '$GITLAB_HOME/data:/var/opt/gitlab'
+    shm_size: '256m'
+```
+
+Nevertheless, `git clone` emitted `Connection Refused` although I followed [the method to expose GitLab on different ports](https://docs.gitlab.com/ee/install/docker.html#expose-gitlab-on-different-ports).\
+Further configurations were required to solve this problem.
+
+``` bash
+$ docker exec -it gitlab bash
+
+# Open GitLab Configuration File
+$ vi /etc/gitlab/gitlab.rb
+
+# Find `gitlab-sshd` and comment-off few things.
+gitlab_sshd['enable'] = true
+gitlab_sshd['dir'] = "/var/opt/gitlab/gitlab-sshd"
+
+gitlab_sshd['env_directory'] = '/opt/gitlab/etc/gitlab-sshd/env'
+gitlab_sshd['listen_address'] = '0.0.0.0:4846'
+
+##...
+# After reconfiguration, verify sshd works with the following commands.
+## In the container
+$ netstat -an | grep 4846
+tcp        0      0 :::4846                :::*                    LISTEN
+## In other machines
+$ ssh -T ssh://git@xxx.xxx.xxx.xxx:4846
+```
+
+Admit that you enrolled your public key in your GitLab account.
+
+#### References
+
+* [https://docs.gitlab.com/ee/user/ssh.html#verify-that-you-can-connect](https://docs.gitlab.com/ee/user/ssh.html#verify-that-you-can-connect)
