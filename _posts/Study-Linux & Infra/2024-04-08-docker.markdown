@@ -1,0 +1,55 @@
+---
+layout: post
+title: "[Docker] Move Docker Data in /var/lib/docker to Another Locations"
+subtitle: ""
+categories: [Study/Linux & Infra]
+tags: [Docker, Linux, ubuntu server]
+comments: true
+---
+
+## How to move docker data to another location
+
+1. Stop the docker daemon
+
+``` bash
+$ sudo systemctl stop docker
+```
+
+2. Edit the `daemon.json` file in the `/etc/docker` directory
+
+``` json
+{
+   "data-root": "/path/to/new/docker/location"
+}
+```
+
+3. Copy the `/var/lib/docker` directory where you specify above
+
+``` bash
+$ sudo cp -axT /var/lib/docker /path/to/new/docker/location
+(you can use other commands what you want like ...)
+$ sudo rsync -aP /var/lib/docker /path/to/new/docker/location
+```
+
+4. Backup the `/var/lib/docker` directory
+
+``` bash
+$ sudo mv /var/lib/docker /var/lib/docker.backup
+```
+
+5. Restart the docker daemon and run the docker command whether the command runs well
+
+``` bash
+$ sudo systemctl start docker
+
+$ docker images
+$ docker ps -a
+$ docker restart your-containers
+...
+```
+
+6. Delete the backup file
+
+``` bash
+$ sudo rm -rf /var/lib/docker.backup
+```
