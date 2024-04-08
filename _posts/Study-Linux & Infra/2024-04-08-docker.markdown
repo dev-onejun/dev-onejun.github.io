@@ -15,7 +15,7 @@ comments: true
 $ sudo systemctl stop docker
 ```
 
-2. Edit the `daemon.json` file in the `/etc/docker` directory
+2. Append the following json data in the `/etc/docker/daemon.json` file
 
 ``` json
 {
