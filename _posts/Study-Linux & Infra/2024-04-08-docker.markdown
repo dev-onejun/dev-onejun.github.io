@@ -9,13 +9,13 @@ comments: true
 
 ## How to move docker data to another location
 
-1. Stop the docker daemon
+### 1. Stop the docker daemon
 
 ``` bash
 $ sudo systemctl stop docker
 ```
 
-2. Append the following json data in the `/etc/docker/daemon.json` file
+### 2. Append the following json data in the `/etc/docker/daemon.json` file
 
 ``` json
 {
@@ -23,7 +23,7 @@ $ sudo systemctl stop docker
 }
 ```
 
-3. Copy the `/var/lib/docker` directory where you specify above
+### 3. Copy the `/var/lib/docker` directory where you specify above
 
 ``` bash
 $ sudo cp -axT /var/lib/docker /path/to/new/docker/location
@@ -31,13 +31,13 @@ $ sudo cp -axT /var/lib/docker /path/to/new/docker/location
 $ sudo rsync -aP /var/lib/docker /path/to/new/docker/location
 ```
 
-4. Backup the `/var/lib/docker` directory
+### 4. Backup the `/var/lib/docker` directory
 
 ``` bash
 $ sudo mv /var/lib/docker /var/lib/docker.backup
 ```
 
-5. Restart the docker daemon and run the docker command whether the command runs well
+### 5. Restart the docker daemon and run the docker command whether the command runs well
 
 ``` bash
 $ sudo systemctl start docker
@@ -48,7 +48,7 @@ $ docker restart your-containers
 ...
 ```
 
-6. Delete the backup file
+### 6. Delete the backup file
 
 ``` bash
 $ sudo rm -rf /var/lib/docker.backup
