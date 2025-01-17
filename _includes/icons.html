@@ -174,4 +174,12 @@
 	</a>
 </li>
 {% endif %}
+
+{% if site.theme_settings.google_scholar %}
+<li>
+    <a href="https://scholar.google.com/citations?user={{ site.theme_settings.google_scholar }}" title="{{ site.theme_settings.str_follow_on }} Google Scholar">
+        <i class="fab fa-fw fa-google-scholar"></i>
+    </a>
+</li>
+{% endif %}
 </ul>
