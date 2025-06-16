@@ -27,4 +27,7 @@ layout : null
     </url>
     {% endunless %}
   {% endfor %}
+  <url>
+    <loc><![CDATA[https://dev-onejun.github.io/CV/]]></loc>
+    <priority>1.0</priority>
 </urlset>
