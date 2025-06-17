@@ -7,5 +7,5 @@ tags: [Paper, Review, SI-SDR]
 comments: true
 ---
 
-[KeyNote](/assets/pdf/Key Metrics in Audio Sound Separation.key),
-[PDF](/assets/ppt/Metrics in Sound Separation.pdf)
+[KeyNote](/assets/ppt/Key Metrics in Audio Sound Separation.key),
+[PDF](/assets/pdf/Metrics in Sound Separation.pdf)
