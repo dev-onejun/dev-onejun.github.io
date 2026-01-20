@@ -1,0 +1,23 @@
+---
+layout: post
+title: "[Conference] ICASSP 2026"
+subtitle: "A one paper is accepted at ICASSP 2026!"
+categories: [Review/Event]
+tags: [Conference, ICASSP, 2026]
+comments: true
+---
+
+First-authored paper titled "Towards distance-aware synthetic audio mixtures for universal sound separation" has been accepted at ICASSP 2026.
+
+I'd put off writing about for a while recently,
+having shown my laziness by merely posting logs(?) for the past few events,
+I plan to organize and post the content for this event one by one
+starting from the paper acceptance news.
+
+* **Jan. 17th, 2026**
+
+Got a notification email from the conference committee.
+
+* **Jan. 28th, 2026**
+
+Camera-ready version due.
