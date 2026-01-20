@@ -25,3 +25,14 @@ I attended a presentation by Dr. Yoshua Bengio.
 ![talk](/assets/img/IJCAI2025/2.jpeg)
 
 I also attended a talk by Drs. Yoshua Bengio, Rina Dechter, Anthony Cohn, and Heng Ji.
+
+Below is the raw notes I took during the talks.
+
+```
+# Safety AI
+
+agent와 predictor를 분리해야한다.
+사람은 agent의 역할, goal-oriented에 중점을 두어야 하고, ai 모델은 predictor, 세상을 이해하는 수준에 머물러야 한다.
+
+고도의 정제된 scientific data는 이를 가능하게 할 것이다?
+```
