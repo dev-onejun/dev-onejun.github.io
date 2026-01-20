@@ -3,7 +3,7 @@ layout: post
 title: "[Lecture] KIAS Lecture Series on Computational Neuroscience and AI"
 subtitle: "Korea Institute for Advanced Study (KIAS) hosted a lecture series from August 4 to 6, 2025."
 categories: [Review/Event]
-tags: [Conference, IJCAI2025]
+tags: [KIAS Lecture Series, Computational Neuroscience, AI]
 comments: true
 ---
 
