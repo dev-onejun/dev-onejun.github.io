@@ -1,0 +1,27 @@
+---
+layout: post
+title: "[Conference] IJCAI 2025"
+subtitle: ""
+categories: [Review/Event]
+tags: [Conference, IJCAI2025]
+comments: true
+---
+
+Participated in the IJCAI 2025 conference held in Montreal, Canada from August 18 to August 22, 2025.
+
+Luckily, I served as a representative for the organizers of [Barkopedia](https://uta-acl2.github.io/Barkopedia/),
+an event run by the lab I belong to.
+
+## Photos
+
+![challenge](/assets/img/IJCAI2025/1.jpeg)
+
+I met Thomas from McGill University, a one of the participants in the Barkopedia challenge.
+
+![presentation](/assets/img/IJCAI2025/3.jpeg)
+
+I attended a presentation by Dr. Yoshua Bengio.
+
+![talk](/assets/img/IJCAI2025/2.jpeg)
+
+I also attended a talk by Drs. Yoshua Bengio, Rina Dechter, Anthony Cohn, and Heng Ji.
