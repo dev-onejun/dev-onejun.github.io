@@ -11,6 +11,6 @@ Volunteered at the KSCS Mind, Brain, and Data Conference 2024 held at ST Center,
 
 ## Photos
 
-![](/assets/img/KSCS2024/1.jpeg)
+![](/assets/img/KSCS2024-Conference/1.jpeg)
 
-![](/assets/img/KSCS2024/2.jpeg)
+![](/assets/img/KSCS2024-Conference/2.jpeg)
