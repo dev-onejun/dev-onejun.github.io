@@ -7,7 +7,8 @@ tags: [Conference, IJCAI2025]
 comments: true
 ---
 
-Attended the lectures at August 4 and 5, 2025.\
+Attended the lectures at August 4 and 5, 2025.
+
 http://events.kias.re.kr/h/CNAI2025/?pageNo=5989
 
 Below is the raw notes I took during the lectures.
@@ -67,6 +68,9 @@ Manifold represntations & capacity for continuous tasks
 + Uri Cohen, et al., 2020, "Separability and geometry of object manifolds in deep neural networks", Nature Communications
 
 ## Predictive coding in cortical microcircuits
+
+**Speaker**: Dr. Hannah Choi (School of Mathematics, Georgia Institute of Technology)\
+**Date**: August 5, 2025
 
 ```
 # Predictive Coding
