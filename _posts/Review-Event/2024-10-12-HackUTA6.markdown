@@ -1,0 +1,28 @@
+---
+layout: post
+title: "[Hackathon] HackUTA 6"
+subtitle: ""
+categories: [Review/Event]
+tags: [Hackathon, HackUTA]
+comments: true
+---
+
+Participated in HackUTA 6, a hackathon event organized by ACM at UTA.
+
+[Repo](https://github.com/dev-onejun/hackuta6)
+
+## Photos
+
+![main](/assets/img/HackUTA6/1.jpeg)
+
+Sunrise..
+![sunrise](/assets/img/HackUTA6/2.jpeg)
+
+Rest...
+![rest](/assets/img/HackUTA6/3.jpeg)
+
+Pitching...
+![pitching](/assets/img/HackUTA6/4.jpeg)
+
+Group photo!
+![group_photo](/assets/img/HackUTA6/5.jpeg)
