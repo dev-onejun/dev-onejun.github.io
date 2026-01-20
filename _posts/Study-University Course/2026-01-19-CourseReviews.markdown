@@ -7,9 +7,9 @@ tags: [Review, Code, Assignment, Project]
 comments: true
 ---
 
-## HIGHLIGHTED COURSE
-
 Migrated from the GitHub profile README.
+
+## HIGHLIGHTED COURSE
 
 ### M.S. at University of Texas at Arlington
 
