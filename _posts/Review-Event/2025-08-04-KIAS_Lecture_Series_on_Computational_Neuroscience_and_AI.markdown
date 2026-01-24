@@ -138,3 +138,7 @@ when it comes to our perception, we use body movement like eye movement, active 
 ### References
 
 - Aishwarya Balwani, et al., 2025, "Exploring the Architectural Biases of the Cortical Microcircuit", Neural Computation
+
+## Photos
+
+![name_tag](/assets/img/KIAS2025/1.jpeg)
