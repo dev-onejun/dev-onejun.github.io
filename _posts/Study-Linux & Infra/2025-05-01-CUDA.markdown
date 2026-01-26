@@ -1,0 +1,33 @@
+---
+layout: post
+title: "NVIDIA CUDA Drivers"
+subtitle: "How to preserve multiple CUDA versions in a machine"
+categories: [Study/Linux & Infra]
+tags: [CUDA, NVIDIA, ubuntu server]
+comments: true
+---
+
+This articles contains a setup guide to install and preserve multiple CUDA versions in a single machine.
+
+## Steps
+
+### 1. Download `.run` file from NVIDIA
+
+For example, search "NVIDIA CUDA 11.8 download" in your browser,
+and go to the [NVIDIA CUDA Toolkit Archive](https://developer.nvidia.com/cuda-11-8-0-download-archive).
+
+**Note that you should download the runfile (local) installer.**
+
+### 2. Install CUDA
+
+Run the downloaded `.run` file, for example:
+
+``` bash
+$ sudo sh cuda_11.8.0_520.61.05_linux_sbsa.run --silent --toolkit --override --installpath=/usr/local/cuda-11.8
+```
+
+The available options can be found at the [NVIDIA CUDA Installation Guide for Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#advanced-options).
+
+**Note that `--toolkit` is designated to only install the CUDA toolkits such as `nvcc` and `Nsight`, without installing the CUDA driver.** For those who want to install the driver as well, refer to the `--driver` option. But mostly, compiling the previous CUDA scripts is enough with the `nvcc` compiler.
+
+### 3. Set (Update) Environment Variables
