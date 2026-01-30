@@ -10,8 +10,8 @@ comments: true
 First-authored paper titled "Towards distance-aware synthetic audio mixtures for universal sound separation" has been accepted at ICASSP 2026.
 
 I'd put off writing about for a while recently,
-having shown my laziness by merely posting logs(?) for the past few events,
-I plan to organize and post the content for this event one by one
+having shown my laziness by merely posting logs(?) for the past few events.
+So I plan to organize and post the content for this event one by one
 starting from the paper acceptance news.
 
 * **Jan. 17th, 2026**
@@ -21,3 +21,7 @@ Got a notification email from the conference committee.
 * **Jan. 28th, 2026**
 
 Camera-ready version due.
+
+A camera-ready submission can be found [here](https://dev-onejun.github.io/CV/assets/pdf/Towards%20distance-aware%20synthetic%20audio%20mixtures%20for%20universal%20sound%20separation.pdf).
+
+A list of accepted papers at ICASSP 2026 can be found [here](https://cmsworkshops.com/ICASSP2026/papers/accepted_papers.php).
