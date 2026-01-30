@@ -27,8 +27,22 @@ layout : null
     </url>
     {% endunless %}
   {% endfor %}
+  {% for page in site.pages %}
+    {% if page.layout and page.title %}
+    <url>
+      <loc>{{ site.url }}{{ page.url | remove: "index.html" | xml_escape }}</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    {% endif %}
+  {% endfor %}
   <url>
-    <loc><![CDATA[https://dev-onejun.github.io/CV/]]></loc>
+    <loc>{{ site.url }}/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>{{ site.url }}/CV/</loc>
     <priority>1.0</priority>
   </url>
 </urlset>
