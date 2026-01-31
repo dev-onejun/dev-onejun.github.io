@@ -1,4 +1,4 @@
-FROM ruby:3.0.5-slim-buster
+FROM ruby:3.4.8-slim-trixie
 
 WORKDIR /usr/src/app
 
