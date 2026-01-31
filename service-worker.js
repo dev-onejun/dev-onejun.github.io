@@ -1,4 +1,4 @@
-const CACHE_NAME = 'v2';
+const CACHE_NAME = 'v3';
 const PRECACHE_URLS = ['/'];
 
 self.addEventListener('install', (event) => {
@@ -19,9 +19,17 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   const req = event.request;
+  const url = new URL(req.url);
 
   // Only handle GET
   if (req.method !== 'GET') return;
+
+  // Don't intercept analytics and external tracking requests
+  if (url.hostname.includes('google-analytics.com') ||
+      url.hostname.includes('googletagmanager.com') ||
+      url.hostname.includes('analytics.google.com')) {
+    return;
+  }
 
   // Network-first for page navigations (HTML)
   if (req.mode === 'navigate' || (req.headers.get('accept') || '').includes('text/html')) {
