@@ -3,7 +3,7 @@ layout: post
 title: "NVIDIA CUDA Drivers"
 subtitle: "How to preserve multiple CUDA versions in a machine"
 categories: [Study/Linux & Infra]
-tags: [CUDA, NVIDIA, ubuntu server]
+tags: [CUDA, NVIDIA, Linux & Infra]
 comments: true
 ---
 
@@ -18,6 +18,8 @@ and go to the [NVIDIA CUDA Toolkit Archive](https://developer.nvidia.com/cuda-11
 
 **Note that you should download the runfile (local) installer.**
 
+![NVIDIA CUDA Download Page](/assets/img/linux_and_infra/CUDA/1.png)
+
 ### 2. Install CUDA
 
 Run the downloaded `.run` file, for example:
@@ -31,3 +33,43 @@ The available options can be found at the [NVIDIA CUDA Installation Guide for Li
 **Note that `--toolkit` is designated to only install the CUDA toolkits such as `nvcc` and `Nsight`, without installing the CUDA driver.** For those who want to install the driver as well, refer to the `--driver` option. But mostly, compiling the previous CUDA scripts is enough with the `nvcc` compiler.
 
 ### 3. Set (Update) Environment Variables
+
+Here is a CUDA configuration in my `.zprofile` file:
+
+``` sh
+# CUDA configuration
+if [ -d "/usr/local/cuda-13.0" ]; then
+  export CUDA_HOME=/usr/local/cuda-13.0
+  export PATH="$CUDA_HOME/bin:${PATH#"$CUDA_HOME/bin:"}"
+  export LD_LIBRARY_PATH="$CUDA_HOME/lib64:${LD_LIBRARY_PATH#"$CUDA_HOME/lib64:"}"
+fi
+## Change CUDA version
+## You can run `$ cuda128` to switch to CUDA 12.8
+cuda118() {
+  export CUDA_HOME=/usr/local/cuda-11.8
+  export PATH="$CUDA_HOME/bin:${PATH#"$CUDA_HOME/bin:"}"
+  export LD_LIBRARY_PATH="$CUDA_HOME/lib64:${LD_LIBRARY_PATH#"$CUDA_HOME/lib64:"}"
+}
+cuda128() {
+  export CUDA_HOME=/usr/local/cuda-12.8
+  export PATH="$CUDA_HOME/bin:${PATH#"$CUDA_HOME/bin:"}"
+  export LD_LIBRARY_PATH="$CUDA_HOME/lib64:${LD_LIBRARY_PATH#"$CUDA_HOME/lib64:"}"
+}
+cuda130() {
+  export CUDA_HOME=/usr/local/cuda-13.0
+  export PATH="$CUDA_HOME/bin:${PATH#"$CUDA_HOME/bin:"}"
+  export LD_LIBRARY_PATH="$CUDA_HOME/lib64:${LD_LIBRARY_PATH#"$CUDA_HOME/lib64:"}"
+}
+```
+
+- You might be allowed to use `~/.bashrc`, `~/.zshrc`, `~/.profile`, or etc. instead of `~/.zprofile` depending on your shell and preference.
+- You can change your current CUDA version by running the corresponding function, for example:
+
+``` bash
+$ cuda118 # for CUDA 11.8
+```
+- Without this configuration, you might want to run your commands with the temporal environment variables, for example:
+
+``` bash
+$ CUDA_HOME=/usr/local/cuda-11.8 PATH="/usr/local/cuda-11.8/bin:${PATH}" LD_LIBRARY_PATH="/usr/local/cuda-11.8/lib64:${LD_LIBRARY_PATH}" YOUR_COMMAND
+```
