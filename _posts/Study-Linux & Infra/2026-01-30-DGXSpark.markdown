@@ -74,3 +74,7 @@ Using ufw on DGX Spark:
 ``` bash
 $ sudo ufw allow in on <interface_name> to any port 22 proto tcp
 ```
+
+## Relevant Articles
+
+- [How to install multiple CUDA versions in a machine](/study/linux%20&%20infra/2025/05/01/CUDA.html)
