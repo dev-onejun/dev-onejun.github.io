@@ -78,3 +78,4 @@ $ sudo ufw allow in on <interface_name> to any port 22 proto tcp
 ## Relevant Articles
 
 - [How to install multiple CUDA versions in a machine](/study/linux%20&%20infra/2025/05/01/CUDA.html)
+- [What Makes NVIDIA the Strongest: A Review of CUDA](/study/artificial%20intelligence/2025/01/13/NVIDIA_CUDA.html)
