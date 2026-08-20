@@ -54,6 +54,17 @@ cf. In FP8, 70B models = 70 GB GPU memory
         - Per-tensor (layer): good for hardware efficiency, but subject to outliers
         - Per-channel: good for quality, but hardware burden
 
+## Kernel
+
+* T=N; T>N; T<N; and Grid-stride loop
+* cudaMallocManaged, cudaMemcpy, cudaMemcpyHostToDevice, cudaMemcpyDeviceToHost
+* cudaStream
+* someKernel<<<blocks, threads, sharedMemSize(0), stream>>>
+    - overlapping data transfer and kernel execution
+* Map, reduction, scan/prefix, and sort
+
+# AI Optimization 2
+
 ## Attention families
 
 Self-attention
@@ -75,15 +86,6 @@ Self-attention
     - naive -> block -> paged
 * Flash attention
     - chain rule
-
-## Kernel
-
-* T=N; T>N; T<N; and Grid-stride loop
-* cudaMallocManaged, cudaMemcpy, cudaMemcpyHostToDevice, cudaMemcpyDeviceToHost
-* cudaStream
-* someKernel<<<blocks, threads, sharedMemSize(0), stream>>>
-    - overlapping data transfer and kernel execution
-* Map, reduction, scan/preix, and sort
 
 <!--
 ***Abstract***\
